@@ -98,6 +98,7 @@
 #define OPT_HAS_GYRO_HW (hardware_int(HARDWARE_gyro_type) > 0)
 #define OPT_HAS_GYRO_MPU6050 (hardware_int(HARDWARE_gyro_type) == 1)
 #define OPT_HAS_GYRO_LSM6DXX (hardware_int(HARDWARE_gyro_type) == 2)
+#define OPT_FORCE_GYRO_INIT hardware_flag(HARDWARE_force_gyro_init)
 
 // TODO Change for the other ones, currently usefull to disable gyro code entirely
 #define HAS_GYRO

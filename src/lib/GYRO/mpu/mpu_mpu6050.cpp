@@ -68,8 +68,13 @@ bool MPUDev_MPU6050::initialize() {
     if (!found) 
     {
         DBGLN("MPU6050 not found!");
-        //mpu = nullptr;
-        return false;
+
+	if (OPT_FORCE_GYRO_INIT) {
+          DBGLN("Forcing MPU6050 initialization");
+	} else {
+          //mpu = nullptr;
+          return false;
+	}
     }
 
     gyroSampleRate = 1000;

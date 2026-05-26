@@ -901,6 +901,12 @@ const HARDWARE_SCHEMA = [
                 ], desc: 'Type of Gyro connected'
             },
             {
+                id: 'force_gyro_init',
+                label: 'Force initialization',
+                type: 'checkbox',
+                desc: 'Initialize the gyro even when not detected. Necessary for some DIY boards.'
+            },
+            {
                 id: 'spi_nss',
                 label: 'SPI NSS pin',
                 type: 'uint',

@@ -141,6 +141,7 @@ static const struct {
     {HARDWARE_spi_int, "spi_int", INT},
 
     {HARDWARE_gyro_type, "gyro_type", INT},
+    {HARDWARE_force_gyro_init, "force_gyro_init", BOOL},
 };
 
 typedef union {

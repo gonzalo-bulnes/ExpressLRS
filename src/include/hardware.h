@@ -157,6 +157,7 @@ typedef enum {
     HARDWARE_spi_int,
 
     HARDWARE_gyro_type,
+    HARDWARE_force_gyro_init,
 
     HARDWARE_LAST
 
